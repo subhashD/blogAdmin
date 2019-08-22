@@ -16,10 +16,10 @@ class ContactController extends Controller
     public function index()
     {
         $pageData = [
-            'pageTitle' => trans('larablog.contact.pageTitle'),
-            'pageDesc'  => trans('larablog.contact.pageDesc'),
-            'title'     => trans('larablog.contact.title'),
-            'subtitle'  => trans('larablog.contact.subtitle'),
+            'pageTitle' => trans('blog.contact.pageTitle'),
+            'pageDesc'  => trans('blog.contact.pageDesc'),
+            'title'     => trans('blog.contact.title'),
+            'subtitle'  => trans('blog.contact.subtitle'),
             'image'     => config('blog.contact_page_image'),
         ];
 

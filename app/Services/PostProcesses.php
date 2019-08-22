@@ -58,7 +58,7 @@ class PostProcesses
     protected function normalIndexData()
     {
         $posts = Post::allPublishedPosts()->simplePaginate(config('blog.posts_per_page'));
-
+        
         return [
             'title'             => config('blog.title'),
             'subtitle'          => config('blog.subtitle'),
@@ -87,6 +87,7 @@ class PostProcesses
                 $q->where('tag', '=', $tag->tag);
             })
             ->where('is_draft', 0)
+            ->where('is_published', 1)
             ->orderBy('published_at', $reverse_direction ? 'asc' : 'desc')
             ->simplePaginate(99999999999999); // No limit in theory
 

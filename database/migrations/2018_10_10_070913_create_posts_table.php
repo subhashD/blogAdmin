@@ -25,6 +25,7 @@ class CreatePostsTable extends Migration
             $table->string('author');
             $table->string('layout')->default('blog.post-layouts.standard');
             $table->boolean('is_draft')->default(1);
+            $table->boolean('is_published')->default(0);
             $table->timestamps();
             $table->timestamp('published_at')->nullable()->index();
             $table->softDeletes();

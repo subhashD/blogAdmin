@@ -98,7 +98,7 @@ class PostController extends Controller
         $post->fill($request->postFillData());
         $post->save();
         $post->syncTags($request->get('tags', []));
-
+        
         return redirect()
             ->back()
             ->withSuccess(trans('messages.success.post-updated'));

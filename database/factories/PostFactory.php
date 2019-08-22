@@ -20,6 +20,7 @@ $factory->define(App\Models\Post::class, function (Faker $faker) {
         'author'            => $faker->name,
         'meta_description'  => "Meta for $title",
         'is_draft'          => rand(0, 1),
+        'is_published'      => rand(0, 1),
         'layout'            => 'blog.post-layouts.standard',
     ];
 });

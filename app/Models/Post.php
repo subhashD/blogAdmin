@@ -56,6 +56,7 @@ class Post extends Model implements Feedable
         'layout',
         'slug',
         'is_draft',
+        'is_published',
         'published_at',
     ];
 
@@ -75,6 +76,7 @@ class Post extends Model implements Feedable
         'author'            => 'string',
         'layout'            => 'string',
         'is_draft'          => 'boolean',
+        'is_published'      => 'boolean',
         'published_at'      => 'datetime:Y-m-d',
     ];
 
@@ -228,6 +230,7 @@ class Post extends Model implements Feedable
         $query = static::where('published_at', '>', $this->published_at)
                             ->where('published_at', '<=', Carbon::now())
                             ->where('is_draft', 0)
+                            ->where('is_published', 1)
                             ->orderBy('published_at', 'asc');
         if ($tag) {
             $query = $query->whereHas('tags', function ($q) use ($tag) {
@@ -249,6 +252,7 @@ class Post extends Model implements Feedable
     {
         $query = static::where('published_at', '<', $this->published_at)
                             ->where('is_draft', 0)
+                            ->where('is_published', 1)
                             ->orderBy('published_at', 'desc');
         if ($tag) {
             $query = $query->whereHas('tags', function ($q) use ($tag) {
@@ -294,8 +298,9 @@ class Post extends Model implements Feedable
     public function scopeAllPublishedPosts($query)
     {
         return $query->with('tags')
-            ->publishedTimePast()
+            /*->publishedTimePast()*/
             ->isNotDraft()
+            ->isPublished()
             ->orderBy('published_at', 'desc');
     }
 
@@ -319,6 +324,36 @@ class Post extends Model implements Feedable
     public function scopeIsNotDraft($query)
     {
         $query->where('is_draft', 0);
+    }
+
+    /**
+     * Scope a query to show posts marked as drafts.
+     *
+     * @return collection
+     */
+    public function scopeIsDraft($query)
+    {
+        $query->where('is_draft', 1);
+    }
+
+    /**
+     * Scope a query to show posts marked as published.
+     *
+     * @return collection
+     */
+    public function scopeIsNotPublished($query)
+    {
+        $query->where('is_published', 0);
+    }
+
+    /**
+     * Scope a query to show posts marked as not published.
+     *
+     * @return collection
+     */
+    public function scopeIsPublished($query)
+    {
+        $query->where('is_published', 1);
     }
 
     /**
@@ -355,8 +390,9 @@ class Post extends Model implements Feedable
     public function scopeActiveAuthors($query)
     {
         return $query->select('author')
-                        ->publishedTimePast()
+                        /*->publishedTimePast()*/
                         ->isNotDraft()
+                        ->isPublished()
                         ->distinct()
                         ->orderBy('author', 'asc');
     }
@@ -372,8 +408,9 @@ class Post extends Model implements Feedable
     {
         return $query->with('tags')
             ->where('author', $author)
-            ->publishedTimePast()
+            /*->publishedTimePast()*/
             ->isNotDraft()
+            ->isPublished()
             ->orderBy('published_at', 'desc');
     }
 }

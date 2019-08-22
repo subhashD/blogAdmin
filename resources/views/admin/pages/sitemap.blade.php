@@ -21,7 +21,7 @@
                     {!! trans('admin.sitemap.card-title') !!}
                 </h5>
                 <p class="card-category">
-                    {!! trans('admin.sitemap.card-sub-title', ['count' => $sitemap->count()]) !!}
+                    {!! trans('admin.sitemap.card-sub-title', ['count' => count($sitemap)]) !!}
                 </p>
             </div>
             <hr>
@@ -34,8 +34,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="bg-dark p-1 rounded">
-                            <code>
-                                <pre lang="xml" class="text-light">
+<code>
+    <pre lang="xml" class="text-light">
 &lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"&gt;
 @foreach($sitemap as $sitemapLine)
     &lt;url&gt;
@@ -46,8 +46,8 @@
     &lt;/url&gt;
 @endforeach
 &lt;/urlset&gt;
-                               </pre>
-                            </code>
+   </pre>
+</code>
                         </div>
                     </div>
                 </div>

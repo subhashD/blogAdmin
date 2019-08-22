@@ -79,7 +79,7 @@
                                                 $status = 'Draft';
                                                 $statusBadge = 'warning text-white';
 
-                                                if(!$post->is_draft ) {
+                                                if($post->is_published ) {
                                                     $status = 'Published';
                                                     $statusBadge = 'success';
                                                 }

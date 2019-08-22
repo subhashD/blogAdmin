@@ -20,6 +20,7 @@ class PostFormFields
         'content'           => '',
         'meta_description'  => '',
         'is_draft'          => '1',
+        'is_published'      => '0',
         'author'            => '',
         'slug'              => '',
         'publish_date'      => '',
@@ -51,12 +52,14 @@ class PostFormFields
 
         if ($this->id) {
             $fields = $this->fieldsFromModel($this->id, $fields);
-            $fields['publish_time'] = $fields['publish_date']->format('g:i A');
-            $fields['publish_date'] = $fields['publish_date']->format('M-d-Y');
+            if(!is_null($fields['publish_date'])) {
+                $fields['publish_time'] = $fields['publish_date']->format('g:i A');
+                $fields['publish_date'] = $fields['publish_date']->format('M-d-Y');
+            }
         } else {
-            $when = Carbon::now()->addHour();
-            $fields['publish_date'] = $when->format('M-j-Y');
-            $fields['publish_time'] = $when->format('g:i A');
+            // $when = Carbon::now()->addHour();
+            // $fields['publish_date'] = $when->format('M-j-Y');
+            // $fields['publish_time'] = $when->format('g:i A');
         }
 
         foreach ($fields as $fieldName => $fieldValue) {

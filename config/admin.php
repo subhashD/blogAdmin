@@ -14,6 +14,6 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'posts_per_page' => env('ADMIN_DEFAULT_PAGES_PER_PAGE', 100),
+    'posts_per_page' => env('ADMIN_DEFAULT_PAGES_PER_PAGE', 20),
 
 ];

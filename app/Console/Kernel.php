@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\PublishBlog::class
     ];
 
     /**
@@ -28,8 +28,8 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->command('sitemap:generate')
-                    ->daily();
+        $schedule->command('sitemap:generate')->daily();
+        $schedule->command('publish:blog')->daily();
     }
 
     /**

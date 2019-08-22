@@ -134,6 +134,15 @@
             @endif
         </div>
 
+        <div class="form-group has-feedback row {{ $errors->has('is_published') ? ' has-error ' : '' }}">
+            <div class="col-md-8 col-md-offset-3">
+                <div class="checkbox">
+                    <input type="checkbox" name="is_published" id="is_published" {{ checked($is_published) }}>
+                    {!! Form::label('is_published', trans('forms.edit-post.labels.post-is_published'), ['class' => 'control-label']); !!}
+                </div>
+            </div>
+        </div>
+
         <div class="form-group has-feedback row {{ $errors->has('is_draft') ? ' has-error ' : '' }}">
             <div class="col-md-8 col-md-offset-3">
                 <div class="checkbox">

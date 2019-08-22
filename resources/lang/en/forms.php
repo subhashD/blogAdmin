@@ -22,6 +22,7 @@ return [
             'post-publish_date'     => 'Publish Date',
             'post-publish_time'     => 'Publish Time',
             'post-is_draft'         => 'Is Draft?',
+            'post-is_published'     => 'Is Published?',
             'post-tags'             => 'Post Tags',
             'post-layout'           => 'Post Layout',
             'post-author'           => 'Post Author',

@@ -31,10 +31,11 @@ class StorePostRequest extends FormRequest
             'post_image'        => 'required',
             'meta_description'  => 'required|max:255',
             'is_draft'          => 'nullable',
+            'is_published'      => 'nullable',
             'author'            => 'required',
             'slug'              => 'required|unique:posts,id,'.$this->id,
-            'publish_date'      => 'required',
-            'publish_time'      => 'required',
+            'publish_date'      => 'nullable|required_with:is_published',
+            'publish_time'      => 'nullable|required_with:is_published',
             'layout'            => 'required',
         ];
     }
@@ -46,10 +47,13 @@ class StorePostRequest extends FormRequest
      */
     public function postFillData()
     {
-        $published_at = new Carbon(
-            $this->publish_date.' '.$this->publish_time
-        );
-
+        $published_at = null;
+        if(!is_null($this->publish_date)) {
+            $published_at = new Carbon(
+                $this->publish_date.' '.$this->publish_time
+            );
+        }
+        
         return [
             'title'             => $this->title,
             'subtitle'          => $this->subtitle,
@@ -57,6 +61,7 @@ class StorePostRequest extends FormRequest
             'content_raw'       => $this->get('content'),
             'meta_description'  => $this->meta_description,
             'is_draft'          => (bool) $this->is_draft,
+            'is_published'      => (bool) $this->is_published,
             'author'            => $this->author,
             'slug'              => $this->slug,
             'published_at'      => $published_at,

@@ -55,7 +55,7 @@ return [
     ],
 
     'footer' => [
-        'copyright' => '&copy; Lara(b)log 2018 | An <a href="https://github.com/jeremykenedy/larablog" target="_blank" class="text-success">opensource</a> blog platform<br /> Developed with Love <i class="fa fa-heart text-danger"></i> by <a href="https://github.com/jeremykenedy" class="text-muted" target="_blank">Jeremy Kenedy</a>',
+        'copyright' => '&copy; Lara(b)log 2018 | An <a href="https://github.com/subhashD/blog" target="_blank" class="text-success">opensource</a> blog platform<br /> Developed with Love <i class="fa fa-heart text-danger"></i> by <a href="https://github.com/subhashD" class="text-muted" target="_blank">Subhash Dwakar</a>',
     ],
 
     'contact' => [
