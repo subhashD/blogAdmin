@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Larablog
 #### A powerful open source Laravel Blog with WYSWYG and CRUD (Create Read Update Delete) built on [Laravel](http://laravel.com/) 5.8 and [Bootstrap](http://getbootstrap.com) 4
 
@@ -712,3 +713,7 @@ Open source projects are the community’s responsibility to use, contribute, an
 
 ### License
 Larablog is licensed under the [MIT license](https://opensource.org/licenses/MIT). Enjoy!
+=======
+# blogAdmin
+This is blog admin to write and publish blogs and tags related to blog 
+>>>>>>> 8fa0aa9d48aa6fbf946143b50b4cabc300ee0115
