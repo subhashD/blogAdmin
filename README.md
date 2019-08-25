@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-## Larablog
+## BlogAdmin
 #### A powerful open source Laravel Blog with WYSWYG and CRUD (Create Read Update Delete) built on [Laravel](http://laravel.com/) 5.8 and [Bootstrap](http://getbootstrap.com) 4
 
-[![Build Status](https://travis-ci.org/jeremykenedy/larablog.svg?branch=master)](https://travis-ci.org/jeremykenedy/larablog)
+[![Build Status](https://travis-ci.org/jeremykenedy/blogAdmin.svg?branch=master)](https://travis-ci.org/jeremykenedy/blogAdmin)
 [![StyleCI](https://github.styleci.io/repos/40459558/shield?branch=master)](https://github.styleci.io/repos/40459558)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jeremykenedy/larablog/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jeremykenedy/larablog/?branch=master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/jeremykenedy/larablog/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jeremykenedy/blogAdmin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jeremykenedy/blogAdmin/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/jeremykenedy/blogAdmin/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 #### Table of contents
@@ -30,7 +29,7 @@
 - [License](#license)
 
 ### Features
-| Larablog Features |
+| blogAdmin Features |
 | :------------ |
 |Built on [Laravel](http://laravel.com/) 5.8|
 |Built on [Bootstrap](https://getbootstrap.com/) 4|
@@ -60,10 +59,10 @@
 |Front-end bootstrap themes with admin management panel|
 
 ### Installation Instructions
-1. Run `git clone https://github.com/jeremykenedy/larablog.git larablog`
+1. Run `git clone https://github.com/jeremykenedy/blogAdmin.git blogAdmin`
 2. Create a MySQL database for the project
     * ```mysql -u root -p```, if using Vagrant: ```mysql -u homestead -psecret```
-    * ```create database larablog;```
+    * ```create database blog_admin;```
     * ```\q```
 3. From the projects root run `cp .env.example .env`
 4. Configure your `.env` file
@@ -92,13 +91,13 @@ php artisan vendor:publish --tag=laravelroles
 ###### And thats it with the caveat of setting up and configuring your development environment. I recommend [Laravel Homestead](https://laravel.com/docs/5.8/homestead)
 
 ### Seeds
-* [DatabaseSeeder.php](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/DatabaseSeeder.php)
-* [PermissionsTableSeeder.php](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/PermissionsTableSeeder.php)
-* [RolesTableSeeder.php](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/RolesTableSeeder.php)
-* [ConnectRelationshipsSeeder.php](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/ConnectRelationshipsSeeder.php)
-* [UsersTableSeeder.php](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/UsersTableSeeder.php)
-* [TagTableSeeder.php](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/TagTableSeeder.php)
-* [PostTableSeeder.php](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/PostTableSeeder.php)
+* [DatabaseSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/DatabaseSeeder.php)
+* [PermissionsTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/PermissionsTableSeeder.php)
+* [RolesTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/RolesTableSeeder.php)
+* [ConnectRelationshipsSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/ConnectRelationshipsSeeder.php)
+* [UsersTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/UsersTableSeeder.php)
+* [TagTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/TagTableSeeder.php)
+* [PostTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/PostTableSeeder.php)
 
 ##### Seeded Roles
 | Role | Level |
@@ -129,7 +128,7 @@ php artisan vendor:publish --tag=laravelroles
 * Controlled by the `.env` file.
 
 ##### Themes Seed List
-  * [ThemesTableSeeder](https://github.com/jeremykenedy/larablog/blob/master/database/seeds/ThemesTableSeeder.php)
+  * [ThemesTableSeeder](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/ThemesTableSeeder.php)
 
 ### Commands
 #### Generate Site Map
@@ -145,18 +144,18 @@ php artisan vendor:publish --tag=laravelroles
 ### Configs
 #### Config File
 Here is a list of the custom config files that have been added or modified to the project:
-* [blog.php](https://github.com/jeremykenedy/larablog/blob/master/config/blog.php)
-* [admin.php](https://github.com/jeremykenedy/larablog/blob/master/config/admin.php)
-* [laravel-logger.php](https://github.com/jeremykenedy/larablog/blob/master/config/laravel-logger.php)
-* [laravelPhpInfo.php](https://github.com/jeremykenedy/larablog/blob/master/config/laravelPhpInfo.php)
-* [laravelusers.php](https://github.com/jeremykenedy/larablog/blob/master/config/laravelusers.php)
-* [roles.php](https://github.com/jeremykenedy/larablog/blob/master/config/roles.php)
-* [superadmin.php](https://github.com/jeremykenedy/larablog/blob/master/config/superadmin.php)
-* [sitemap.php](https://github.com/jeremykenedy/larablog/blob/master/config/sitemap.php)
-* [filesystems.php](https://github.com/jeremykenedy/larablog/blob/master/config/filesystems.php)
+* [blog.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/blog.php)
+* [admin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/admin.php)
+* [laravel-logger.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/laravel-logger.php)
+* [laravelPhpInfo.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/laravelPhpInfo.php)
+* [laravelusers.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/laravelusers.php)
+* [roles.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/roles.php)
+* [superadmin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/superadmin.php)
+* [sitemap.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/sitemap.php)
+* [filesystems.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/filesystems.php)
 
 #### Env Variables
-Here is a list of the additonal added [`.env`](https://github.com/jeremykenedy/larablog/blob/master/.env.example) variables:
+Here is a list of the additonal added [`.env`](https://github.com/jeremykenedy/blogAdmin/blob/master/.env.example) variables:
 
 ```
 INITIAL_SEEDED_SUPER_ADMIN_USERNAME='Admin'
@@ -166,7 +165,7 @@ INITIAL_SEEDED_SUPER_ADMIN_USERPASSWORD='password'
 BLOG_APP_NAME="${APP_NAME}"
 BLOG_DEFAULT_TITLE='Lara(b)log2'
 BLOG_DEFAULT_SUBTITLE='An open source blog platform'
-BLOG_DEFAULT_DESCRIPTION='Larablog 2 is an open source blog built on Laravel'
+BLOG_DEFAULT_DESCRIPTION='blogAdmin is an open source blog built on Laravel'
 BLOG_DEFAULT_AUTHOR='Jeremy Kenedy'
 BLOG_SITEMAP_LIMIT=100
 
@@ -209,13 +208,13 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 ```
 
 #### Language Files
-* [larablog.php](https://github.com/jeremykenedy/larablog/blob/master/resources/lang/en/larablog.php)
-* [admin.php](https://github.com/jeremykenedy/larablog/blob/master/resources/lang/en/admin.php)
-* [tooltips.php](https://github.com/jeremykenedy/larablog/blob/master/resources/lang/en/tooltips.php)
-* [messages.php](https://github.com/jeremykenedy/larablog/blob/master/resources/lang/en/messages.php)
-* [forms.php](https://github.com/jeremykenedy/larablog/blob/master/resources/lang/en/forms.php)
-* [emails.php](https://github.com/jeremykenedy/larablog/blob/master/resources/lang/en/emails.php)
-* [validation.php](https://github.com/jeremykenedy/larablog/blob/master/resources/lang/en/validation.php)
+* [blogAdmin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/blog.php)
+* [admin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/admin.php)
+* [tooltips.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/tooltips.php)
+* [messages.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/messages.php)
+* [forms.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/forms.php)
+* [emails.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/emails.php)
+* [validation.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/validation.php)
 
 ### Routes
 
@@ -312,37 +311,37 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 ```
 
 ### Screenshots
-![LaraBlog](https://s3-us-west-2.amazonaws.com/larablog.io/1-larablog-home.jpg)
-![LaraBlog Post](https://s3-us-west-2.amazonaws.com/larablog.io/2-larablog-post.jpg)
-![LaraBlog Post Comments](https://s3-us-west-2.amazonaws.com/larablog.io/22-larablog-comments.jpg)
-![LaraBlog Tags](https://s3-us-west-2.amazonaws.com/larablog.io/3-larablog-tags.jpg)
-![LaraBlog Author](https://s3-us-west-2.amazonaws.com/larablog.io/4-larablog-author.jpg)
-![LaraBlog Authors](https://s3-us-west-2.amazonaws.com/larablog.io/5-larablog-authors.jpg)
-![LaraBlog Contact](https://s3-us-west-2.amazonaws.com/larablog.io/6-larablog-contact.jpg)
-![LaraBlog Admin Dashboard](https://s3-us-west-2.amazonaws.com/larablog.io/7-larablog-admin-dashboard.jpg)
-![LaraBlog Admin Posts](https://s3-us-west-2.amazonaws.com/larablog.io/8-larablog-admin-posts.jpg)
-![LaraBlog Admin Post Create](https://s3-us-west-2.amazonaws.com/larablog.io/9-larablog-admin-post-create.jpg)
-![LaraBlog Admin Post Edit](https://s3-us-west-2.amazonaws.com/larablog.io/10-larablog-admin-post-edit.jpg)
-![LaraBlog Admin Tags](https://s3-us-west-2.amazonaws.com/larablog.io/11-larablog-admin-post-tags.jpg)
-![LaraBlog Admin Tag Edit](https://s3-us-west-2.amazonaws.com/larablog.io/12-larablog-admin-post-tag-edit.jpg)
-![LaraBlog Admin Files](https://s3-us-west-2.amazonaws.com/larablog.io/13-larablog-admin-files.jpg)
-![LaraBlog Admin File Manager Pop Up](https://s3-us-west-2.amazonaws.com/larablog.io/21-larablog-admin-file-manager-pop-up.jpg)
-![LaraBlog Admin Upload](https://s3-us-west-2.amazonaws.com/larablog.io/14-larablog-admin-files-upload.jpg)
-![LaraBlog Admin Users](https://s3-us-west-2.amazonaws.com/larablog.io/15-larablog-admin-users.jpg)
-![LaraBlog Admin User](https://s3-us-west-2.amazonaws.com/larablog.io/16-larablog-admin-user.jpg)
-![LaraBlog Admin User Edit](https://s3-us-west-2.amazonaws.com/larablog.io/17-larablog-admin-user-edit.jpg)
-![LaraBlog Admin Sitemap](https://s3-us-west-2.amazonaws.com/larablog.io/20-larablog-admin-sitemap-gen.jpg)
-![LaraBlog Admin PHP Info](https://s3-us-west-2.amazonaws.com/larablog.io/18-larablog-admin-phpinfo.jpg)
-![LaraBlog Admin Activity](https://s3-us-west-2.amazonaws.com/larablog.io/19-larablog-admin-activity.jpg)
-![LaraBlog Admin Themes](https://s3-us-west-2.amazonaws.com/larablog.io/23-larablog-themes.jpg)
-![LaraBlog Admin Theme Edit](https://s3-us-west-2.amazonaws.com/larablog.io/24-larablog-themes-edit.jpg)
-![LaraBlog Admin Theme Add](https://s3-us-west-2.amazonaws.com/larablog.io/25-larablog-themes-add.jpg)
-![LaraBlog Admin Theme Example](https://s3-us-west-2.amazonaws.com/larablog.io/26-larablog-themes-sketchy.jpg)
+![blogAdmin](https://s3-us-west-2.amazonaws.com/blogAdmin.io/1-blogAdmin-home.jpg)
+![blogAdmin Post](https://s3-us-west-2.amazonaws.com/blogAdmin.io/2-blogAdmin-post.jpg)
+![blogAdmin Post Comments](https://s3-us-west-2.amazonaws.com/blogAdmin.io/22-blogAdmin-comments.jpg)
+![blogAdmin Tags](https://s3-us-west-2.amazonaws.com/blogAdmin.io/3-blogAdmin-tags.jpg)
+![blogAdmin Author](https://s3-us-west-2.amazonaws.com/blogAdmin.io/4-blogAdmin-author.jpg)
+![blogAdmin Authors](https://s3-us-west-2.amazonaws.com/blogAdmin.io/5-blogAdmin-authors.jpg)
+![blogAdmin Contact](https://s3-us-west-2.amazonaws.com/blogAdmin.io/6-blogAdmin-contact.jpg)
+![blogAdmin Admin Dashboard](https://s3-us-west-2.amazonaws.com/blogAdmin.io/7-blogAdmin-admin-dashboard.jpg)
+![blogAdmin Admin Posts](https://s3-us-west-2.amazonaws.com/blogAdmin.io/8-blogAdmin-admin-posts.jpg)
+![blogAdmin Admin Post Create](https://s3-us-west-2.amazonaws.com/blogAdmin.io/9-blogAdmin-admin-post-create.jpg)
+![blogAdmin Admin Post Edit](https://s3-us-west-2.amazonaws.com/blogAdmin.io/10-blogAdmin-admin-post-edit.jpg)
+![blogAdmin Admin Tags](https://s3-us-west-2.amazonaws.com/blogAdmin.io/11-blogAdmin-admin-post-tags.jpg)
+![blogAdmin Admin Tag Edit](https://s3-us-west-2.amazonaws.com/blogAdmin.io/12-blogAdmin-admin-post-tag-edit.jpg)
+![blogAdmin Admin Files](https://s3-us-west-2.amazonaws.com/blogAdmin.io/13-blogAdmin-admin-files.jpg)
+![blogAdmin Admin File Manager Pop Up](https://s3-us-west-2.amazonaws.com/blogAdmin.io/21-blogAdmin-admin-file-manager-pop-up.jpg)
+![blogAdmin Admin Upload](https://s3-us-west-2.amazonaws.com/blogAdmin.io/14-blogAdmin-admin-files-upload.jpg)
+![blogAdmin Admin Users](https://s3-us-west-2.amazonaws.com/blogAdmin.io/15-blogAdmin-admin-users.jpg)
+![blogAdmin Admin User](https://s3-us-west-2.amazonaws.com/blogAdmin.io/16-blogAdmin-admin-user.jpg)
+![blogAdmin Admin User Edit](https://s3-us-west-2.amazonaws.com/blogAdmin.io/17-blogAdmin-admin-user-edit.jpg)
+![blogAdmin Admin Sitemap](https://s3-us-west-2.amazonaws.com/blogAdmin.io/20-blogAdmin-admin-sitemap-gen.jpg)
+![blogAdmin Admin PHP Info](https://s3-us-west-2.amazonaws.com/blogAdmin.io/18-blogAdmin-admin-phpinfo.jpg)
+![blogAdmin Admin Activity](https://s3-us-west-2.amazonaws.com/blogAdmin.io/19-blogAdmin-admin-activity.jpg)
+![blogAdmin Admin Themes](https://s3-us-west-2.amazonaws.com/blogAdmin.io/23-blogAdmin-themes.jpg)
+![blogAdmin Admin Theme Edit](https://s3-us-west-2.amazonaws.com/blogAdmin.io/24-blogAdmin-themes-edit.jpg)
+![blogAdmin Admin Theme Add](https://s3-us-west-2.amazonaws.com/blogAdmin.io/25-blogAdmin-themes-add.jpg)
+![blogAdmin Admin Theme Example](https://s3-us-west-2.amazonaws.com/blogAdmin.io/26-blogAdmin-themes-sketchy.jpg)
 
 ### File Tree
 
 ```
-Larablog
+blogAdmin
 ├── .editorconfig
 ├── .env.example
 ├── .env.travis
@@ -573,7 +572,7 @@ Larablog
 │   │       ├── auth.php
 │   │       ├── emails.php
 │   │       ├── forms.php
-│   │       ├── larablog.php
+│   │       ├── blogAdmin.php
 │   │       ├── messages.php
 │   │       ├── modals.php
 │   │       ├── pagination.php
@@ -712,7 +711,7 @@ Before opening an issue there are a couple of considerations:
 Open source projects are the community’s responsibility to use, contribute, and debug.
 
 ### License
-Larablog is licensed under the [MIT license](https://opensource.org/licenses/MIT). Enjoy!
+blogAdmin is licensed under the [MIT license](https://opensource.org/licenses/MIT). Enjoy!
 =======
 # blogAdmin
 This is blog admin to write and publish blogs and tags related to blog 
