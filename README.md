@@ -1,4 +1,4 @@
-## BlogAdmin
+<!-- ## BlogAdmin
 #### A powerful open source Laravel Blog with WYSWYG and CRUD (Create Read Update Delete) built on [Laravel](http://laravel.com/) 5.8 and [Bootstrap](http://getbootstrap.com) 4
 
 [![Build Status](https://travis-ci.org/subhashD/blogAdmin.svg?branch=master)](https://travis-ci.org/subhashD/blogAdmin)
@@ -310,7 +310,7 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 
 ```
 
-<!-- ### Screenshots
+### Screenshots
 ![blogAdmin](https://s3-us-west-2.amazonaws.com/blogAdmin.io/1-blogAdmin-home.jpg)
 ![blogAdmin Post](https://s3-us-west-2.amazonaws.com/blogAdmin.io/2-blogAdmin-post.jpg)
 ![blogAdmin Post Comments](https://s3-us-west-2.amazonaws.com/blogAdmin.io/22-blogAdmin-comments.jpg)
@@ -336,7 +336,7 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 ![blogAdmin Admin Themes](https://s3-us-west-2.amazonaws.com/blogAdmin.io/23-blogAdmin-themes.jpg)
 ![blogAdmin Admin Theme Edit](https://s3-us-west-2.amazonaws.com/blogAdmin.io/24-blogAdmin-themes-edit.jpg)
 ![blogAdmin Admin Theme Add](https://s3-us-west-2.amazonaws.com/blogAdmin.io/25-blogAdmin-themes-add.jpg)
-![blogAdmin Admin Theme Example](https://s3-us-west-2.amazonaws.com/blogAdmin.io/26-blogAdmin-themes-sketchy.jpg) -->
+![blogAdmin Admin Theme Example](https://s3-us-west-2.amazonaws.com/blogAdmin.io/26-blogAdmin-themes-sketchy.jpg)
 
 ### File Tree
 
@@ -704,7 +704,7 @@ Before opening an issue there are a couple of considerations:
 * **Show that you have made an attempt** to *look into the issue*.
 * **Check** to see if the issue you are *reporting is a duplicate* of a previous reported issue.
 * **Following these instructions show me that you have tried.**
-* If you have a questions send me an email to subhashD@gmail.com
+* If you have a questions send me an email to subhash.diwakar@gmail.com
 * Need some help, I can do my best on Slack: https://opensourcehelpgroup.slack.com
 * Please be considerate that this is an open source project that I provide to the community for FREE when opening an issue.
 
@@ -716,3 +716,4 @@ blogAdmin is licensed under the [MIT license](https://opensource.org/licenses/MI
 # blogAdmin
 This is blog admin to write and publish blogs and tags related to blog 
 >>>>>>> 8fa0aa9d48aa6fbf946143b50b4cabc300ee0115
+ -->
