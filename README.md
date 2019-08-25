@@ -1,10 +1,10 @@
 ## BlogAdmin
 #### A powerful open source Laravel Blog with WYSWYG and CRUD (Create Read Update Delete) built on [Laravel](http://laravel.com/) 5.8 and [Bootstrap](http://getbootstrap.com) 4
 
-[![Build Status](https://travis-ci.org/jeremykenedy/blogAdmin.svg?branch=master)](https://travis-ci.org/jeremykenedy/blogAdmin)
+[![Build Status](https://travis-ci.org/subhashD/blogAdmin.svg?branch=master)](https://travis-ci.org/subhashD/blogAdmin)
 [![StyleCI](https://github.styleci.io/repos/40459558/shield?branch=master)](https://github.styleci.io/repos/40459558)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jeremykenedy/blogAdmin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jeremykenedy/blogAdmin/?branch=master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/jeremykenedy/blogAdmin/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/subhashD/blogAdmin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/subhashD/blogAdmin/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/subhashD/blogAdmin/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 #### Table of contents
@@ -39,7 +39,7 @@
 |Uses [Artisan](http://laravel.com/docs/5.8/artisan) to manage database migration, schema creations, and create/publish page controller templates|
 |Dependencies are managed with [COMPOSER](https://getcomposer.org/)|
 |Laravel Scaffolding **User** and **Administrator Authentication**.|
-|CRUD (Create, Read, Update, Delete) User Management with [Laravel Users](https://github.com/jeremykenedy/laravel-users) Package|
+|CRUD (Create, Read, Update, Delete) User Management with [Laravel Users](https://github.com/subhashD/laravel-users) Package|
 |CRUD (Create, Read, Update, Delete) Blog Posts|
 |CRUD (Create, Read, Update, Delete) Tags|
 |Built in [CKEditor](https://ckeditor.com/) WYSWYG Editor|
@@ -48,9 +48,9 @@
 |Makes us of Laravel [Mix](https://laravel.com/docs/5.8/mix) to compile assets|
 |Makes use of [Language Localization Files](https://laravel.com/docs/5.8/localization)|
 |Active Nav states using [Laravel Requests](https://laravel.com/docs/5.8/requests)|
-|User [Roles/ACL Implementation](https://github.com/jeremykenedy/laravel-roles)|
-|Admin PHP Information UI using [Laravel PHP Info](https://github.com/jeremykenedy/laravel-phpinfo) Package|
-|Activity Logging using [Laravel-logger](https://github.com/jeremykenedy/laravel-logger)|
+|User [Roles/ACL Implementation](https://github.com/subhashD/laravel-roles)|
+|Admin PHP Information UI using [Laravel PHP Info](https://github.com/subhashD/laravel-phpinfo) Package|
+|Activity Logging using [Laravel-logger](https://github.com/subhashD/laravel-logger)|
 |Uses Laravel built in [mail](https://laravel.com/docs/5.8/mail) services|
 |Automatic sitemap generation with [Spatie Laravel Sitemap](https://github.com/spatie/laravel-sitemap) Package|
 |Automatic RSS Feed generation with [Spatie Laravel Feed](https://github.com/spatie/laravel-feed) Package|
@@ -59,7 +59,7 @@
 |Front-end bootstrap themes with admin management panel|
 
 ### Installation Instructions
-1. Run `git clone https://github.com/jeremykenedy/blogAdmin.git blogAdmin`
+1. Run `git clone https://github.com/subhashD/blogAdmin.git blogAdmin`
 2. Create a MySQL database for the project
     * ```mysql -u root -p```, if using Vagrant: ```mysql -u homestead -psecret```
     * ```create database blog_admin;```
@@ -91,13 +91,13 @@ php artisan vendor:publish --tag=laravelroles
 ###### And thats it with the caveat of setting up and configuring your development environment. I recommend [Laravel Homestead](https://laravel.com/docs/5.8/homestead)
 
 ### Seeds
-* [DatabaseSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/DatabaseSeeder.php)
-* [PermissionsTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/PermissionsTableSeeder.php)
-* [RolesTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/RolesTableSeeder.php)
-* [ConnectRelationshipsSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/ConnectRelationshipsSeeder.php)
-* [UsersTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/UsersTableSeeder.php)
-* [TagTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/TagTableSeeder.php)
-* [PostTableSeeder.php](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/PostTableSeeder.php)
+* [DatabaseSeeder.php](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/DatabaseSeeder.php)
+* [PermissionsTableSeeder.php](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/PermissionsTableSeeder.php)
+* [RolesTableSeeder.php](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/RolesTableSeeder.php)
+* [ConnectRelationshipsSeeder.php](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/ConnectRelationshipsSeeder.php)
+* [UsersTableSeeder.php](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/UsersTableSeeder.php)
+* [TagTableSeeder.php](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/TagTableSeeder.php)
+* [PostTableSeeder.php](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/PostTableSeeder.php)
 
 ##### Seeded Roles
 | Role | Level |
@@ -128,7 +128,7 @@ php artisan vendor:publish --tag=laravelroles
 * Controlled by the `.env` file.
 
 ##### Themes Seed List
-  * [ThemesTableSeeder](https://github.com/jeremykenedy/blogAdmin/blob/master/database/seeds/ThemesTableSeeder.php)
+  * [ThemesTableSeeder](https://github.com/subhashD/blogAdmin/blob/master/database/seeds/ThemesTableSeeder.php)
 
 ### Commands
 #### Generate Site Map
@@ -144,18 +144,18 @@ php artisan vendor:publish --tag=laravelroles
 ### Configs
 #### Config File
 Here is a list of the custom config files that have been added or modified to the project:
-* [blog.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/blog.php)
-* [admin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/admin.php)
-* [laravel-logger.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/laravel-logger.php)
-* [laravelPhpInfo.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/laravelPhpInfo.php)
-* [laravelusers.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/laravelusers.php)
-* [roles.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/roles.php)
-* [superadmin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/superadmin.php)
-* [sitemap.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/sitemap.php)
-* [filesystems.php](https://github.com/jeremykenedy/blogAdmin/blob/master/config/filesystems.php)
+* [blog.php](https://github.com/subhashD/blogAdmin/blob/master/config/blog.php)
+* [admin.php](https://github.com/subhashD/blogAdmin/blob/master/config/admin.php)
+* [laravel-logger.php](https://github.com/subhashD/blogAdmin/blob/master/config/laravel-logger.php)
+* [laravelPhpInfo.php](https://github.com/subhashD/blogAdmin/blob/master/config/laravelPhpInfo.php)
+* [laravelusers.php](https://github.com/subhashD/blogAdmin/blob/master/config/laravelusers.php)
+* [roles.php](https://github.com/subhashD/blogAdmin/blob/master/config/roles.php)
+* [superadmin.php](https://github.com/subhashD/blogAdmin/blob/master/config/superadmin.php)
+* [sitemap.php](https://github.com/subhashD/blogAdmin/blob/master/config/sitemap.php)
+* [filesystems.php](https://github.com/subhashD/blogAdmin/blob/master/config/filesystems.php)
 
 #### Env Variables
-Here is a list of the additonal added [`.env`](https://github.com/jeremykenedy/blogAdmin/blob/master/.env.example) variables:
+Here is a list of the additonal added [`.env`](https://github.com/subhashD/blogAdmin/blob/master/.env.example) variables:
 
 ```
 INITIAL_SEEDED_SUPER_ADMIN_USERNAME='Admin'
@@ -163,10 +163,10 @@ INITIAL_SEEDED_SUPER_ADMIN_USEREMAIL='admin@admin.com'
 INITIAL_SEEDED_SUPER_ADMIN_USERPASSWORD='password'
 
 BLOG_APP_NAME="${APP_NAME}"
-BLOG_DEFAULT_TITLE='Lara(b)log2'
+BLOG_DEFAULT_TITLE='BlogAdmin'
 BLOG_DEFAULT_SUBTITLE='An open source blog platform'
 BLOG_DEFAULT_DESCRIPTION='blogAdmin is an open source blog built on Laravel'
-BLOG_DEFAULT_AUTHOR='Jeremy Kenedy'
+BLOG_DEFAULT_AUTHOR='Subhash Diwakar'
 BLOG_SITEMAP_LIMIT=100
 
 BLOG_DEFAULT_IMAGE=
@@ -208,13 +208,13 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 ```
 
 #### Language Files
-* [blogAdmin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/blog.php)
-* [admin.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/admin.php)
-* [tooltips.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/tooltips.php)
-* [messages.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/messages.php)
-* [forms.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/forms.php)
-* [emails.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/emails.php)
-* [validation.php](https://github.com/jeremykenedy/blogAdmin/blob/master/resources/lang/en/validation.php)
+* [blogAdmin.php](https://github.com/subhashD/blogAdmin/blob/master/resources/lang/en/blog.php)
+* [admin.php](https://github.com/subhashD/blogAdmin/blob/master/resources/lang/en/admin.php)
+* [tooltips.php](https://github.com/subhashD/blogAdmin/blob/master/resources/lang/en/tooltips.php)
+* [messages.php](https://github.com/subhashD/blogAdmin/blob/master/resources/lang/en/messages.php)
+* [forms.php](https://github.com/subhashD/blogAdmin/blob/master/resources/lang/en/forms.php)
+* [emails.php](https://github.com/subhashD/blogAdmin/blob/master/resources/lang/en/emails.php)
+* [validation.php](https://github.com/subhashD/blogAdmin/blob/master/resources/lang/en/validation.php)
 
 ### Routes
 
@@ -228,13 +228,13 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 |        | DELETE                                 | _debugbar/cache/{key}/{tags?}                     | debugbar.cache.delete        | Barryvdh\Debugbar\Controllers\CacheController@delete                                              | Barryvdh\Debugbar\Middleware\DebugbarEnabled                                                                             |
 |        | GET|HEAD                               | _debugbar/clockwork/{id}                          | debugbar.clockwork           | Barryvdh\Debugbar\Controllers\OpenHandlerController@clockwork                                     | Barryvdh\Debugbar\Middleware\DebugbarEnabled                                                                             |
 |        | GET|HEAD                               | _debugbar/open                                    | debugbar.openhandler         | Barryvdh\Debugbar\Controllers\OpenHandlerController@handle                                        | Barryvdh\Debugbar\Middleware\DebugbarEnabled                                                                             |
-|        | GET|HEAD                               | activity                                          | activity                     | jeremykenedy\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showAccessLog             | web,auth,activity                                                                                                        |
-|        | DELETE                                 | activity/clear-activity                           | clear-activity               | jeremykenedy\LaravelLogger\App\Http\Controllers\LaravelLoggerController@clearActivityLog          | web,auth,activity                                                                                                        |
-|        | GET|HEAD                               | activity/cleared                                  | cleared                      | jeremykenedy\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showClearedActivityLog    | web,auth,activity                                                                                                        |
-|        | GET|HEAD                               | activity/cleared/log/{id}                         |                              | jeremykenedy\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showClearedAccessLogEntry | web,auth,activity                                                                                                        |
-|        | DELETE                                 | activity/destroy-activity                         | destroy-activity             | jeremykenedy\LaravelLogger\App\Http\Controllers\LaravelLoggerController@destroyActivityLog        | web,auth,activity                                                                                                        |
-|        | GET|HEAD                               | activity/log/{id}                                 |                              | jeremykenedy\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showAccessLogEntry        | web,auth,activity                                                                                                        |
-|        | POST                                   | activity/restore-log                              | restore-activity             | jeremykenedy\LaravelLogger\App\Http\Controllers\LaravelLoggerController@restoreClearedActivityLog | web,auth,activity                                                                                                        |
+|        | GET|HEAD                               | activity                                          | activity                     | subhashD\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showAccessLog             | web,auth,activity                                                                                                        |
+|        | DELETE                                 | activity/clear-activity                           | clear-activity               | subhashD\LaravelLogger\App\Http\Controllers\LaravelLoggerController@clearActivityLog          | web,auth,activity                                                                                                        |
+|        | GET|HEAD                               | activity/cleared                                  | cleared                      | subhashD\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showClearedActivityLog    | web,auth,activity                                                                                                        |
+|        | GET|HEAD                               | activity/cleared/log/{id}                         |                              | subhashD\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showClearedAccessLogEntry | web,auth,activity                                                                                                        |
+|        | DELETE                                 | activity/destroy-activity                         | destroy-activity             | subhashD\LaravelLogger\App\Http\Controllers\LaravelLoggerController@destroyActivityLog        | web,auth,activity                                                                                                        |
+|        | GET|HEAD                               | activity/log/{id}                                 |                              | subhashD\LaravelLogger\App\Http\Controllers\LaravelLoggerController@showAccessLogEntry        | web,auth,activity                                                                                                        |
+|        | POST                                   | activity/restore-log                              | restore-activity             | subhashD\LaravelLogger\App\Http\Controllers\LaravelLoggerController@restoreClearedActivityLog | web,auth,activity                                                                                                        |
 |        | GET|HEAD                               | admin                                             | admin                        | App\Http\Controllers\Admin\AdminController@index                                                  | web,auth,permission:perms.user,activity                                                                                  |
 |        | GET|HEAD                               | admin/filemanager                                 | unisharp.lfm.show            | UniSharp\LaravelFilemanager\Controllers\LfmController@show                                        | web,auth,\UniSharp\LaravelFilemanager\Middlewares\MultiUser,\UniSharp\LaravelFilemanager\Middlewares\CreateDefaultFolder |
 |        | GET|HEAD                               | admin/filemanager/crop                            | unisharp.lfm.getCrop         | UniSharp\LaravelFilemanager\Controllers\CropController@getCrop                                    | web,auth,\UniSharp\LaravelFilemanager\Middlewares\MultiUser,\UniSharp\LaravelFilemanager\Middlewares\CreateDefaultFolder |
@@ -294,23 +294,23 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 |        | POST                                   | password/reset                                    | password.update              | App\Http\Controllers\Auth\ResetPasswordController@reset                                           | web,activity,guest                                                                                                       |
 |        | GET|HEAD                               | password/reset                                    | password.request             | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm                            | web,activity,guest                                                                                                       |
 |        | GET|HEAD                               | password/reset/{token}                            | password.reset               | App\Http\Controllers\Auth\ResetPasswordController@showResetForm                                   | web,activity,guest                                                                                                       |
-|        | GET|HEAD                               | phpinfo                                           | laravelPhpInfo::phpinfo      | jeremykenedy\LaravelPhpInfo\App\Http\Controllers\LaravelPhpInfoController@phpinfo                 | web,auth,permission:perms.super.admin                                                                                    |
+|        | GET|HEAD                               | phpinfo                                           | laravelPhpInfo::phpinfo      | subhashD\LaravelPhpInfo\App\Http\Controllers\LaravelPhpInfoController@phpinfo                 | web,auth,permission:perms.super.admin                                                                                    |
 |        | GET|HEAD                               | register                                          | register                     | App\Http\Controllers\Auth\RegisterController@showRegistrationForm                                 | web,activity,guest                                                                                                       |
 |        | POST                                   | register                                          |                              | App\Http\Controllers\Auth\RegisterController@register                                             | web,activity,guest                                                                                                       |
-|        | POST                                   | search-users                                      | search-users                 | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@search                   | web,auth,permission:perms.super.admin                                                                                    |
-|        | POST                                   | users                                             | users.store                  | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@store                    | web,auth,permission:perms.super.admin                                                                                    |
-|        | GET|HEAD                               | users                                             | users                        | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@index                    | web,auth,permission:perms.super.admin                                                                                    |
-|        | GET|HEAD                               | users/create                                      | users.create                 | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@create                   | web,auth,permission:perms.super.admin                                                                                    |
-|        | DELETE                                 | users/{user}                                      | user.destroy                 | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@destroy                  | web,auth,permission:perms.super.admin                                                                                    |
-|        | PUT|PATCH                              | users/{user}                                      | users.update                 | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@update                   | web,auth,permission:perms.super.admin                                                                                    |
-|        | GET|HEAD                               | users/{user}                                      | users.show                   | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@show                     | web,auth,permission:perms.super.admin                                                                                    |
-|        | GET|HEAD                               | users/{user}/edit                                 | users.edit                   | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@edit                     | web,auth,permission:perms.super.admin                                                                                    |
+|        | POST                                   | search-users                                      | search-users                 | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@search                   | web,auth,permission:perms.super.admin                                                                                    |
+|        | POST                                   | users                                             | users.store                  | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@store                    | web,auth,permission:perms.super.admin                                                                                    |
+|        | GET|HEAD                               | users                                             | users                        | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@index                    | web,auth,permission:perms.super.admin                                                                                    |
+|        | GET|HEAD                               | users/create                                      | users.create                 | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@create                   | web,auth,permission:perms.super.admin                                                                                    |
+|        | DELETE                                 | users/{user}                                      | user.destroy                 | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@destroy                  | web,auth,permission:perms.super.admin                                                                                    |
+|        | PUT|PATCH                              | users/{user}                                      | users.update                 | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@update                   | web,auth,permission:perms.super.admin                                                                                    |
+|        | GET|HEAD                               | users/{user}                                      | users.show                   | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@show                     | web,auth,permission:perms.super.admin                                                                                    |
+|        | GET|HEAD                               | users/{user}/edit                                 | users.edit                   | subhashD\laravelusers\app\Http\Controllers\UsersManagementController@edit                     | web,auth,permission:perms.super.admin                                                                                    |
 |        | GET|HEAD                               | {slug}                                            |                              | App\Http\Controllers\BlogController@showPost                                                      | web,activity                                                                                                             |
 +--------+----------------------------------------+---------------------------------------------------+------------------------------+---------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 ```
 
-### Screenshots
+<!-- ### Screenshots
 ![blogAdmin](https://s3-us-west-2.amazonaws.com/blogAdmin.io/1-blogAdmin-home.jpg)
 ![blogAdmin Post](https://s3-us-west-2.amazonaws.com/blogAdmin.io/2-blogAdmin-post.jpg)
 ![blogAdmin Post Comments](https://s3-us-west-2.amazonaws.com/blogAdmin.io/22-blogAdmin-comments.jpg)
@@ -336,7 +336,7 @@ RECAPTCHA_CDN=https://www.google.com/recaptcha/api.js
 ![blogAdmin Admin Themes](https://s3-us-west-2.amazonaws.com/blogAdmin.io/23-blogAdmin-themes.jpg)
 ![blogAdmin Admin Theme Edit](https://s3-us-west-2.amazonaws.com/blogAdmin.io/24-blogAdmin-themes-edit.jpg)
 ![blogAdmin Admin Theme Add](https://s3-us-west-2.amazonaws.com/blogAdmin.io/25-blogAdmin-themes-add.jpg)
-![blogAdmin Admin Theme Example](https://s3-us-west-2.amazonaws.com/blogAdmin.io/26-blogAdmin-themes-sketchy.jpg)
+![blogAdmin Admin Theme Example](https://s3-us-west-2.amazonaws.com/blogAdmin.io/26-blogAdmin-themes-sketchy.jpg) -->
 
 ### File Tree
 
@@ -704,7 +704,7 @@ Before opening an issue there are a couple of considerations:
 * **Show that you have made an attempt** to *look into the issue*.
 * **Check** to see if the issue you are *reporting is a duplicate* of a previous reported issue.
 * **Following these instructions show me that you have tried.**
-* If you have a questions send me an email to jeremykenedy@gmail.com
+* If you have a questions send me an email to subhashD@gmail.com
 * Need some help, I can do my best on Slack: https://opensourcehelpgroup.slack.com
 * Please be considerate that this is an open source project that I provide to the community for FREE when opening an issue.
 
